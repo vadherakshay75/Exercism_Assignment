@@ -6,8 +6,6 @@ class Series
     @str = str
     @length_of_str = length_of_str
     @str_array = str_array
-    @data = ''
-    @array = array
   end
 
   def slices(length_of_str)
