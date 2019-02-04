@@ -1,6 +1,6 @@
 # exercise
 class Acronym
   def self.abbreviate(phrase)
-    phrase.split(/\W+/).map { |item| item[0] }.join.upcase
+    phrase.split(/\W+/).collect(&:capitalize).map(&:chr).join
   end
 end
