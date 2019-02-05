@@ -15,5 +15,3 @@ class Series
     str_array
   end
 end
-series = Series.new('01234')
-series.slices(1)
