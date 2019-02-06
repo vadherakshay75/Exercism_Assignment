@@ -12,7 +12,7 @@ class Luhn
 
   def self.validate(num_array)
     num_array.each_with_index do |num, index|
-      return p num if num == false
+      return num if num == false
       temp = 0
       if (index - 1).modulo(2).zero?
         temp = num * 2
