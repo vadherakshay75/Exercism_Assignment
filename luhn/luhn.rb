@@ -15,7 +15,7 @@ class Luhn
       return p num if num == false
       temp = 0
       if (index - 1).modulo(2).zero?
-        temp = num * 2 
+        temp = num * 2
         temp > 9 ? num_array[index]=temp - 9 : num_array[index] = temp
       end
     end
@@ -27,6 +27,6 @@ class Luhn
     array.each do |a|
       data += a unless a.nil?
     end
-    p data
+    data
   end
 end
